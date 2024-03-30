@@ -5,7 +5,8 @@
 This is certainly the second simplest plugin ever.
 """
 
-from test_settings import TEST_MESSAGE
+import logging
+TEST_MESSAGE = logging.debug
 from yapsy.IPlugin import IPlugin
 
 class VersionedPlugin12a1(IPlugin):
