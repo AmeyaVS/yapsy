@@ -1,5 +1,7 @@
-
+black
 coverage
+pylint
 pytest
 flake8
 pytest-cov
+setuptools

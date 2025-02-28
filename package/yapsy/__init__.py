@@ -26,7 +26,7 @@ you to load and activate your plugins. So that the following code
 should get you a fully working plugin management system::
 
    from yapsy.PluginManager import PluginManager
-   
+
    # Build the manager
    simplePluginManager = PluginManager()
    # Tell it the default place(s) where to find plugins
@@ -52,17 +52,18 @@ should get you a fully working plugin management system::
 
 """
 
-__version__="2.0.0"
+__version__ = "2.0.0"
 
 # tell epydoc that the documentation is in the reStructuredText format
 __docformat__ = "restructuredtext en"
 
 # provide a default named log for package-wide use
 import logging
-log = logging.getLogger('yapsy')
+
+log = logging.getLogger("yapsy")
 
 # Some constants concerning the plugins
-PLUGIN_NAME_FORBIDEN_STRING=";;"
+PLUGIN_NAME_FORBIDEN_STRING = ";;"
 """
 .. warning:: This string (';;' by default) is forbidden in plugin
              names, and will be usable to describe lists of plugins
@@ -70,19 +71,20 @@ PLUGIN_NAME_FORBIDEN_STRING=";;"
 """
 
 import re
+
 RE_NON_ALPHANUM = re.compile(r"\W")
 
 
 def NormalizePluginNameForModuleName(pluginName):
-	"""
-	Normalize a plugin name into a safer name for a module name.
-	
-	.. note:: may do a little more modifications than strictly
-	          necessary and is not optimized for speed.
-	"""
-	if len(pluginName)==0:
-		return "_"
-	if pluginName[0].isdigit():
-		pluginName = "_" + pluginName
-	ret = RE_NON_ALPHANUM.sub("_",pluginName)
-	return ret
+    """
+    Normalize a plugin name into a safer name for a module name.
+
+    .. note:: may do a little more modifications than strictly
+              necessary and is not optimized for speed.
+    """
+    if len(pluginName) == 0:
+        return "_"
+    if pluginName[0].isdigit():
+        pluginName = "_" + pluginName
+    ret = RE_NON_ALPHANUM.sub("_", pluginName)
+    return ret

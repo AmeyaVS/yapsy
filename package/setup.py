@@ -25,7 +25,7 @@ Automagical stuff:
       python setup.py sdist bdist_egg upload
 
   - build the documentation
-   
+
       python setup.py build_sphinx
 """
 
@@ -36,36 +36,36 @@ from setuptools import setup
 originalDir = os.getcwd()
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 try:
-	setup(
-		name = "Yapsy",
-		version = __import__("yapsy").__version__,
-		packages = ['yapsy'],
-		package_dir = {'yapsy':'yapsy'},
-		
-		# the unit tests
-		test_suite = "test.test_All.MainTestSuite",
-		
-		# metadata for upload to PyPI
-		author = "Thibauld Nion",
-		author_email = "thibauld@tibonihoo.net",
-		description = "Yet another plugin system",
-		license = "BSD",
-		keywords = "plugin manager",
-		url = "http://yapsy.sourceforge.net",
-		# more details
-		long_description = open("README.txt").read(),
-		classifiers=['Development Status :: 5 - Production/Stable',
-					 'Intended Audience :: Developers',
-					 'License :: OSI Approved :: BSD License',
-					 'Operating System :: OS Independent',
-					 'Programming Language :: Python',
-					 'Programming Language :: Python :: 3',
-					 'Topic :: Software Development :: Libraries :: Python Modules'],
-		platforms='All',
-		install_requires = [
-			"packaging",
-			]
-		)
-	
+    setup(
+        name="Yapsy",
+        version=__import__("yapsy").__version__,
+        packages=["yapsy"],
+        package_dir={"yapsy": "yapsy"},
+        # the unit tests
+        test_suite="test.test_All.MainTestSuite",
+        # metadata for upload to PyPI
+        author="Thibauld Nion",
+        author_email="thibauld@tibonihoo.net",
+        description="Yet another plugin system",
+        license="BSD",
+        keywords="plugin manager",
+        url="http://yapsy.sourceforge.net",
+        # more details
+        long_description=open("README.txt").read(),
+        classifiers=[
+            "Development Status :: 5 - Production/Stable",
+            "Intended Audience :: Developers",
+            "License :: OSI Approved :: BSD License",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python",
+            "Programming Language :: Python :: 3",
+            "Topic :: Software Development :: Libraries :: Python Modules",
+        ],
+        platforms="All",
+        install_requires=[
+            "packaging",
+        ],
+    )
+
 finally:
-  os.chdir(originalDir)
+    os.chdir(originalDir)

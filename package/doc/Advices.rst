@@ -23,7 +23,7 @@ Use the logging system
 Yapsy uses Python's standard ``logging`` module to record most
 important events and especially plugin loading failures.
 
-When developping an application based on yapsy, you'll benefit from
+When developing an application based on yapsy, you'll benefit from
 looking at the 'debug' level logs, which can easily be done from your
 application code with the following snippet::
 
@@ -31,7 +31,7 @@ application code with the following snippet::
   logging.basicConfig(level=logging.DEBUG)
 
 Also, please note that yapsy uses a named logger for all its logs, so
-that you can selectively activage debug logs for yapsy with the
+that you can selectively activate debug logs for yapsy with the
 following snippet::
 
   import logging
@@ -70,7 +70,7 @@ There must be **only one plugin defined per module**. This means that
 you can't have two plugin description files pointing at the same
 module for instance.
 
-Because of the "categorization by inheritance" system, you **musn't
+Because of the "categorization by inheritance" system, you **mustn't
 directly import the subclass** of ``IPlugin`` in the main plugin file,
 instead import its containing module and make your plugin class
 inherit from ``ContainingModule.SpecificPluginClass`` as in the
