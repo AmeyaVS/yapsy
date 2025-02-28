@@ -29,18 +29,18 @@ from yapsy.IMultiprocessPlugin import IMultiprocessPlugin
 
 
 class IMultiprocessChildPlugin(IMultiprocessPlugin, Process):
-	"""
-	Base class for multiprocessed plugin.
+    """
+    Base class for multiprocessed plugin.
 
-	DEPRECATED(>1.11): Please use IMultiProcessPluginBase instead !
-	"""
+    DEPRECATED(>1.11): Please use IMultiProcessPluginBase instead !
+    """
 
-	def __init__(self, parent_pipe):
-		IMultiprocessPlugin.__init__(self, parent_pipe)
-		Process.__init__(self)
+    def __init__(self, parent_pipe):
+        IMultiprocessPlugin.__init__(self, parent_pipe)
+        Process.__init__(self)
 
-	def run(self):
-		"""
-		Override this method in your implementation
-		"""
-		return
+    def run(self):
+        """
+        Override this method in your implementation
+        """
+        return
