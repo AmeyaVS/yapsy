@@ -166,7 +166,7 @@ project but it is now used in other (more advanced) projects like:
 .. _err: http://gbin.github.com/err/
 .. _nikola: http://nikola.ralsina.com.ar/
 
-Nowadays, the development is clearly motivated by such external projects and the enthusiast developpers who use the library. 
+Nowadays, the development is clearly motivated by such external projects and the enthusiast developers who use the library.
 
 If you're interested in using yapsy, feel free to look into the following links:
 
@@ -240,7 +240,7 @@ References
 Other Python plugin systems already existed before |yapsy| and some
 have appeared after that. |yapsy|'s creation is by no mean a sign that
 these others plugin systems sucks :) It is just the results of me
-being slighlty lazy and as I had already a good idea of how a simple
+being slightly lazy and as I had already a good idea of how a simple
 plugin system should look like, I wanted to implement my own
 [#older_systems]_.
 
@@ -272,11 +272,11 @@ plugin system should look like, I wanted to implement my own
 - stevedor_ looks quite promising and actually seems to make
   setuptools relevant to build plugin systems.
 
-.. _stevedor: https://pypi.python.org/pypi/stevedore
+.. _stevedore: https://pypi.python.org/pypi/stevedore
 
-- You can look up more example on a `stackoverflow's discution about minimal plugin systems in Python`_
+- You can look up more example on a `stackoverflow's discussion about minimal plugin systems in Python`_
 
-.. _`stackoverflow's discution about minimal plugin systems in Python`: http://stackoverflow.com/questions/932069/building-a-minimal-plugin-architecture-in-python
+.. _`stackoverflow's discussion about minimal plugin systems in Python`: http://stackoverflow.com/questions/932069/building-a-minimal-plugin-architecture-in-python
 
 
 .. [#older_systems] All the more because it seems that my modest
