@@ -7,7 +7,7 @@ A fat-free DIY Python plugin management toolkit.
 [![PyPI version](http://img.shields.io/pypi/v/Yapsy.svg)](https://pypi.python.org/pypi/yapsy)
 [![Documentation Status](https://readthedocs.org/projects/yapsy/badge/?version=latest)](https://yapsy.readthedocs.io/en/latest/?badge=latest)
 [![Automatic Tests](https://github.com/AmeyaVS/yapsy/actions/workflows/automatic-tests.yml/badge.svg)](https://github.com/AmeyaVS/yapsy/actions/workflows/automatic-tests.yml)
-[![Coverage Status](https://coveralls.io/repos/github/AmeyaVS/yapsy/badge.svg?branch=master)](https://coveralls.io/github/AmeyaVS/yapsy?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/AmeyaVS/yapsy/badge.svg?branch=main)](https://coveralls.io/github/AmeyaVS/yapsy?branch=main)
 
 
 Get more info on: 
